@@ -1,42 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
 :root {
     --font-size: 14px;
-    --header-font: "Inter", sans-serif;	
+    --header-font: "Rubik", sans-serif;	
     --body-font: "Inter", sans-serif;
     --sidebar-default-opacity: 1; /* Change this to 1 if you want the sidebar to always be visible in desktop view*/
 
-    /* Current: Shinji */  
-	--body-background-color: #46535E;
+	--body-background-color: #ECEFF4;
     --popup-background-color: #46535E;
-    --main-background-color: #333943;
+    --main-background-color: #4C566A;
     --search-background-color: #333943;
     --block-highlight-accent-color: #758DA2;
   
-    --body-text-color: #f5f5f5;
+    --body-text-color: #2E3440;
     --black-text: #222222;
     --empty-text-color: #9DA5B4;
-    --sidebar-base-text-color: #9DA5B4;
+    --sidebar-base-text-color: #E5E9F0;
   
-    --title-accent-color: #f5f5f5;
-    --primary-accent-color: #FF93BA;
-    --secondary-accent-color: #D3B4FF;
-    --secondary-accent-extra-color: #D3B4FF;
-    --tertiary-accent-color: #9CEEFF;
-    --tertiary-accent-extra-color: #46DFFF;
+    --title-accent-color: #2E3440;
+    --primary-accent-color: #2E3440;
+    --secondary-accent-color: #3B4252;
+    --secondary-accent-extra-color: #fff;
+    --tertiary-accent-color: #3B4252;
+    --tertiary-accent-extra-color: #3B4252;
   
     --border-color: rgba(0, 0, 0, 0.08);
     --subtle-border-color: rgba(255, 255, 255, 0.11);
     --search-border-color: rgba(255, 255, 255, 0.08);
-    --reference-item-background: rgba(0, 0, 0, 0.10);
+    --reference-item-background: rgba(0, 0, 0, 0.05);
     --brackets-color: rgba(0, 0, 0, 0.25);
 }
 
-#app > div > div > div.roam-main > div.roam-body-main.flex-h-box > div.roam-center > div:nth-child(1) > div > div:nth-child(1) > div.flex-v-box > div:nth-child(1) > div.flex-v-box > div > div:nth-child(1) > div > div:nth-child(3) > div{
-    border:1px solid lime;
-    flex-grow:0;
-    flex-shrink:0;
-}
 
 div.flex-h-box > div.flex-align-start > div.flex-justify-start{
     border:1px solid green;
@@ -417,7 +412,7 @@ span.bp3-button.bp3-minimal.bp3-small.bp3-icon-more::before {
 .rm-reference-item, .rm-embed-container {
     background: var(--reference-item-background) !important;
     border: none;
-    border-radius: 6px !important;
+    border-radius: 0px !important;
     padding: 2px 10px 2px 2px !important; 
   }
 
@@ -626,17 +621,13 @@ body,
   background: var(--main-background-color) !important; }
 
 .roam-center {
-  border-left: 1px solid var(--border-color) !important;
-  border-top: 1px solid var(--border-color) !important;
-  border-right: 1px solid var(--border-color) !important;
-  border-radius: 6px;
-  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.04) !important;
   overflow: visible !important;
   background: var(--body-background-color) !important;
   margin-top: 10px;
   margin-right: 16px;
   margin-left: 16px; 
   -webkit-font-smoothing: antialiased;
+  border-radius: 0.6em;
 }
 
 .roam-center > div:first-child {
@@ -690,7 +681,7 @@ h1.rm-level1.hoverparent > textarea{
     font-weight:900;
 }
 
-/* #: */
+/* Headings */
 h1.rm-level1 > div, .rm-level1 > textarea  {
 color: var(--primary-accent-color);
  font-size: 1.4em !important;
@@ -700,7 +691,7 @@ color: var(--primary-accent-color);
   */
  }
 
-/* #: */
+
 .rm-level2 > div, .rm-level2 > textarea {
   color: var(--primary-accent-color); 
   font-size: 1.25em !important;
