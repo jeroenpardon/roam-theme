@@ -638,7 +638,7 @@ span.checkmark {
 }
 
 .rm-level1 > div, .rm-level1 > textarea {
-  font-size: 1.8em !important;
+  font-size: 1.8rem !important;
   line-height: 150% !important;
   width: 38rem !important;
   margin-top: 7px;
@@ -647,7 +647,7 @@ span.checkmark {
 
 .rm-level2 > div, .rm-level2 > textarea {
   color: var(--primary-accent-color); 
-  font-size: 1.6em !important;
+  font-size: 1.6rem !important;
   line-height: 180% !important;
   width: 38rem !important;
   margin-top: 3px;
@@ -656,7 +656,7 @@ span.checkmark {
 
 .rm-level3 > div, .rm-level3 > textarea {
   color: var(--secondary-accent-color);
-  font-size: 1.3em !important;
+  font-size: 1.3rem !important;
   line-height: 150% !important; 
   width: 38rem !important;
   margin-top: 0px;
