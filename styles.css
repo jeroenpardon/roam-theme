@@ -687,6 +687,7 @@ color: var(--primary-accent-color);
  font-size: 1.4em !important;
   line-height: 1.6 !important;
   width: 38rem !important;
+font-family: var(--header-font);
 
   */
  }
@@ -698,6 +699,7 @@ color: var(--primary-accent-color);
   line-height: 1.6 !important;
   width: 38rem !important;
 
+font-family: var(--header-font);
 }
 
 .rm-level3 > div, .rm-level3 > textarea {
@@ -706,6 +708,7 @@ color: var(--primary-accent-color);
   line-height: 1.6 !important; 
   width: 38rem !important;
 
+font-family: var(--header-font);
 }
 
 .rm-level1 div, .rm-level1 textarea {
