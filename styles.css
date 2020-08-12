@@ -638,7 +638,7 @@ span.checkmark {
 }
 
 .rm-level1 > div, .rm-level1 > textarea {
-  font-size: 1.8rem !important;
+  font-size: 23px !important;
   line-height: 150% !important;
   width: 38rem !important;
   margin-top: 7px;
