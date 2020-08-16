@@ -1,34 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
+*:focus { outline: 1px dotted rgb(140, 99, 253); }
+
 :root {
     --font-size: 14px;
-    --header-font: "Rubik", sans-serif;	
-    --body-font: "Inter", sans-serif;
+  --font-weight: normal;
+    --header-font: "Rubik", sans-serif;
+  --header-weight: 500!important;
+    --body-font: "Rubik", sans-serif;
     --sidebar-default-opacity: 1; /* Change this to 1 if you want the sidebar to always be visible in desktop view*/
 
-	--body-background-color: #ECEFF4;
-    --popup-background-color: #46535E;
-    --main-background-color: #4C566A;
-    --search-background-color: #333943;
-    --block-highlight-accent-color: #758DA2;
   
-    --body-text-color: #2E3440;
-    --black-text: #222222;
+	--body-background-color: #000000;
+    --popup-background-color: #000000;
+    
+  
+  
+  /* sidebar */
+      --main-background-color: #000;
+      --sidebar-base-text-color: #9DA5B4;
+      --secondary-accent-extra-color: #ffffff;
+      --sidebar-accent-text-color: #272838;
+      --sidebar-pill-color: #272838;
+  
+  /* search */
+    --search-background-color: #212224;
+    --block-highlight-accent-color: #ffffff;
+  
+  /* backlinks */
+    --reference-item-background: #272838;
+    --reference-item-border: rgb(140, 99, 253);
+  
+    --body-text-color: #ffffff;
+    --black-text: green;
     --empty-text-color: #9DA5B4;
-    --sidebar-base-text-color: #E5E9F0;
+    
   
-    --title-accent-color: #2E3440;
-    --primary-accent-color: #2E3440;
-    --secondary-accent-color: #3B4252;
-    --secondary-accent-extra-color: #fff;
-    --tertiary-accent-color: #3B4252;
-    --tertiary-accent-extra-color: #3B4252;
+    --title-accent-color: #ffffff;
+    --primary-accent-color: rgb(140, 99, 253);
+    --secondary-accent-color: #e7e7e7;
+
+  /* link */
+    --tertiary-accent-color: #ffffff;
   
-    --border-color: rgba(0, 0, 0, 0.08);
+  /* hover */
+  --tertiary-accent-extra-color: rgb(140, 99, 253);
+  
+    --border-color: rgba(255, 255, 255, 0.12);
     --subtle-border-color: rgba(255, 255, 255, 0.11);
     --search-border-color: rgba(255, 255, 255, 0.08);
-    --reference-item-background: rgba(0, 0, 0, 0.05);
+    
     --brackets-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -411,10 +433,15 @@ span.bp3-button.bp3-minimal.bp3-small.bp3-icon-more::before {
 
 .rm-reference-item, .rm-embed-container {
     background: var(--reference-item-background) !important;
-    border: none;
-    border-radius: 0px !important;
-    padding: 2px 10px 2px 2px !important; 
+    border: 2px solid transparent;
+    border-radius: .5em !important;
+    padding: 2px 10px 2px 2px !important;
   }
+
+  .rm-reference-item:hover, .rm-embed-container:hover {
+      border: 2px solid var(--reference-item-border);
+    }
+
 
   .rm-embed-inner-block-hide{
     font-size: var(--font-size) !important;
@@ -523,6 +550,31 @@ a:focus, a:hover{
     letter-spacing: 0.25px;
     -webkit-font-smoothing: subpixel-antialiased;
 }
+
+div.starred-pages{
+    margin-left:0;
+}
+
+div.starred-pages a div.page{
+  background-color:var(--sidebar-pill-color)!important;
+  padding:.3em .8em!important;
+  color:var(--secondary-accent-extra-color)!important;
+  border-radius:0.8em!important;
+  text-align:left!important;
+  margin-bottom:0.75em;
+    border: 2px solid transparent!important;
+    transition:.3s;
+}
+
+div.starred-pages a div.page:hover{
+  border: 2px solid var(--primary-accent-color)!important;
+}
+
+div.starred-pages a div{
+  background-color:#ccc!important;
+  display: table!important;
+}
+
 
 .bp3-icon-star::before {
     content: "★";
@@ -641,7 +693,9 @@ body,
 .roam-topbar,
 #right-sidebar,
 .roam-sidebar-container {
-  background: transparent !important; }
+  background: transparent !important;
+border-right:1px solid var(--border-color)!important;
+}
 
 #right-sidebar {
   border: none !important;
@@ -684,31 +738,31 @@ h1.rm-level1.hoverparent > textarea{
 /* Headings */
 h1.rm-level1 > div, .rm-level1 > textarea  {
 color: var(--primary-accent-color);
- font-size: 1.4em !important;
+ font-size: 1.5rem !important;
   line-height: 1.6 !important;
   width: 38rem !important;
-font-family: var(--header-font);
-
+font-family: var(--header-font)!important;
+font-weight: 700!important;
   */
  }
 
 
 .rm-level2 > div, .rm-level2 > textarea {
   color: var(--primary-accent-color); 
-  font-size: 1.25em !important;
+  font-size: 1.3rem !important;
   line-height: 1.6 !important;
   width: 38rem !important;
-
-font-family: var(--header-font);
+font-weight: 500!important;
+font-family: var(--header-font)!important;
 }
 
 .rm-level3 > div, .rm-level3 > textarea {
   color: var(--primary-accent-color);
-  font-size: 1.1em !important;
+  font-size: 1.15rem !important;
   line-height: 1.6 !important; 
   width: 38rem !important;
-
-font-family: var(--header-font);
+font-weight: 400!important;
+font-family: var(--header-font)!important;
 }
 
 .rm-level1 div, .rm-level1 textarea {
@@ -748,7 +802,10 @@ font-family: var(--header-font);
 .starred-pages
 .page:hover {
   color: var(--secondary-accent-extra-color) !important;
-  background-color: transparent !important; }
+  background-color:transparent;
+}
+
+
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
@@ -760,7 +817,7 @@ font-family: var(--header-font);
 .starred-pages
 .page,
 .bp3-minimal > div {
-  color: #BABABA !important;
+
   font-size: 13px !important; }
 
 .roam-sidebar-content {
@@ -782,9 +839,7 @@ font-family: var(--header-font);
 .roam-app
 .roam-sidebar-container
 .roam-sidebar-content
-.starred-pages-wrapper
-.starred-pages
-.page {
+.starred-pages-wrapper{
   padding: 6px 24px 6px !important; }
 
 .bp3-icon-small {
@@ -807,6 +862,7 @@ font-family: var(--header-font);
 .roam-article > div > div h1 {
   height: auto !important;
   line-height: 1.5 !important;
+  color:red!important;
 }
 
 .rm-title-display,
